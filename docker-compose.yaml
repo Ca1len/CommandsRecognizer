@@ -1,0 +1,7 @@
+services:
+  main_service:
+    volumes:
+      - "./data:/work/App/data"
+    build: .
+    ports: 
+      - "5000:8080"
