@@ -1,0 +1,67 @@
+{
+  "dicom_data":{
+    "tumor" : {
+      "path" : "...",
+      "void_value" : значение_вокселей_пустоты
+    },
+    "bones" : {
+      "path" : "...",
+      "void_value" : значение_вокселей_пустоты
+    },
+    "insertion_zone" : {
+      "path" : "...",
+      "void_value" : значение_вокселей_пустоты
+    }
+  },
+  "rfa" : {
+    "radius_range" : [левая_граница_радиусов, правая_граница_радиусов],
+    "margin" : величина_запаса_в_мм
+  },
+  "electrode" : {
+    "length" : полная_длина_электрода,
+    "active_zone_length" : длина_активной_части,
+    "diameter" : диаметр_части_вводимой_под_кожу,
+    "active_zone_diameter" : диаметр_активной_части
+  },
+  "trajectory" : {
+    "method" : "clustering" или "brute_force",
+    "electrode_margin" : [запас_активной_части_электрода, запас_вводимой_под_кожу_части_электрода],
+    "bone_margin" : минимально_допустимое_расстояние_между_электродом_и_костью,
+    "clusters_number" : целое_число_>_1
+  }
+}
+
+ПРИМЕР
+{
+  "dicom_data":{
+    "tumor" : {
+      "path" : "...",
+      "void_value" : 0
+    },
+    "bones" : {
+      "path" : "...",
+      "void_value" : -32768
+    },
+    "insertion_zone" : {
+      "path" : "...",
+      "void_value" : -2048
+    }
+  },
+  "rfa" : {
+    "radius_range" : [15, 20],
+    "margin" : 2.5
+  },
+  "electrode" : {
+    "length" : 220,
+    "active_zone_length" : 5,
+    "diameter" : 2,
+    "active_zone_diameter" : 0.4
+  },
+  "trajectory" : {
+    "method" : "clustering",
+    "electrode_margin" : [2, 15],
+    "bone_margin" : 10,
+    "clusters_number" : 1024
+  }
+}
+

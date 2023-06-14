@@ -58,6 +58,9 @@ def read_json(file):
         file = open(file, 'r')
         data = json.load(file)
         file.close()
+        if isinstance(data, list):
+            return np.array(data, dtype=np.float32)
+
         array = data.get("data")
         if array is None:
             raise Exception("Data in json is not Array like")

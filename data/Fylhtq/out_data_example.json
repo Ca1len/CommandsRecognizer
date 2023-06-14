@@ -1,0 +1,39 @@
+{
+  "rfa" : {
+    "zone_N(N - номер зоны)" : {
+      "center" : [x, y, z],
+      "radius" : величина_радиуса_зоны
+    }
+  },
+  "trajectories" : {
+    "line_N(N - номер линии)" : {
+      "source" : [x, y, z],
+      "dest" : [x, y, z]
+    }
+  }
+}
+
+ПРИМЕР
+{
+  "rfa" : {
+    "zone_0" : {
+      "center" : [1, 2, 3],
+      "radius" : 25.2
+    },
+    "zone_1" : {
+      "center" : [3, 2.3, 10],
+      "radius" : 5
+    }
+  },
+  "trajectories" : {
+    "line_0" : {
+      "source" : [1, 2, 3],
+      "dest" : [2, 4, 6]
+    },
+    "line_1" : {
+      "source" : [2, 29, 222],
+      "dest" : [21, 123, 9999]
+    }
+  }
+}
+

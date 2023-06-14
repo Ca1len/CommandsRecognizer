@@ -23,13 +23,10 @@ class Server():
             return json.dumps({"Error": str(traceback.format_exc())})
 
     def on_new_client(self, client_sock, addr):
-        message = bytearray()
         while True:
-            new_message = client_sock.recv(MESSAGE_LENGTH)
-            # print(new_message[-3:])
-            if not len(new_message):
+            message = client_sock.recv(MESSAGE_LENGTH)
+            if not len(message):
                 break
-            message.extend(new_message)
             print(f"Message from {addr}:") #{message}")
             return_message = self.handle_request(message.decode())
             client_sock.send(return_message.encode())

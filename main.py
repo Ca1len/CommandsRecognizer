@@ -1,6 +1,6 @@
 from include.app import App
 from include.server import Server
-from include.model_script import create_model, M5
+from include.model_script import create_model, M5, M4
 
 
 model = create_model()

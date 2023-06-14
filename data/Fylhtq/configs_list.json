@@ -1,0 +1,162 @@
+{
+  "1" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [15, 20],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [3, 15],
+        "bone_margin" : 10,
+        "clusters_number" : 2048
+      }
+    }
+  },
+  "2" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [10, 15],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [5, 15],
+        "bone_margin" : 5,
+        "clusters_number" : 2048
+      }
+    }
+  },
+  "3" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [20, 25],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [5, 15],
+        "bone_margin" : 5,
+        "clusters_number" : 2048
+      }
+    }
+  },
+  "4" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [30, 35],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [5, 15],
+        "bone_margin" : 5,
+        "clusters_number" : 2048
+      }
+    }
+  },
+  "5" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [12, 18],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [4, 15],
+        "bone_margin" : 5,
+        "clusters_number" : 4096
+      }
+    }
+  },
+  "6" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [20, 25],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [5, 20],
+        "bone_margin" : 0,
+        "clusters_number" : 2048
+      }
+    }
+  },
+  "7" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [10, 15],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [4, 15],
+        "bone_margin" : 5,
+        "clusters_number" : 2048
+      }
+    }
+  },
+  "8" : {
+    "1" : {
+      "rfa" : {
+        "radius_range" : [16, 21],
+        "margin" : 2.5
+      },
+      "electrode" : {
+        "length" : 220,
+        "active_zone_length" : 5,
+        "diameter" : 2,
+        "active_zone_diameter" : 0.4
+      },
+      "trajectory" : {
+        "method" : "clustering",
+        "electrode_margin" : [5, 15],
+        "bone_margin" : 4,
+        "clusters_number" : 2048
+      }
+    }
+  }
+}

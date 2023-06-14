@@ -10,7 +10,12 @@ HOST = socket.gethostbyname(socket.gethostname())
 
 # Data example for request for NN. Must be List type. 
 # If you got data stored in file, then read it and make one-dimensional List.
-data = np.random.rand(8000).tolist()
+# data = np.random.rand(8000).tolist()
+commands = ['on', 'off', 'backward', 'forward', 'left', 'right']
+data = []
+for command in commands:
+    with open(f"data/Fylhtq/{command}.json", "r") as file:
+        data.append(json.load(file))
 
 
 #===============================================
@@ -38,10 +43,11 @@ def send_and_recive(sock, request):
 def main():
     sock = connect()
 
-    json_data = {"data": data}
+    for c, d in zip(commands, data):
+        json_data = {"data": d}
 
-    response = send_and_recive(sock, json_data)
-    print(response)
+        response = send_and_recive(sock, json_data)
+        print(c, response)
 
 
 if __name__ == "__main__":
